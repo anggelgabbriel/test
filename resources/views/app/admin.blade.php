@@ -12,7 +12,7 @@
         <div class="row">
             <div id="app"
                  class="mt-10 center-screen-with-bar d-flex flex-column justify-content-center align-items-center text-center">
-                <button ref="open_modal" class="hidden" data-toggle="modal" data-target="#meuModal"></button>
+                <button ref="open_modal" class="hidden" data-toggle="modal" data-target="#meuModal" data-backdrop="static"></button>
                 <!-- Modal -->
                 <div id="meuModal" class="modal fade items-center justify-center" role="dialog">
                     <div class="modal-dialog">
@@ -54,9 +54,6 @@
                                 <button type="button" class="d-btn-less-padding btn-secondary hidden"
                                         data-dismiss="modal"
                                         ref="close_modal">Close
-                                </button>
-                                <button @click="posting = !posting" class="absolute" style="margin-top: -250px">
-                                    asdsad
                                 </button>
 
                                 <div class="post-loading d-flex items-center flex-col" v-if="posting">
@@ -264,7 +261,6 @@
                 ,
 
                 fetchExams() {
-                    console.log("asd")
                     var self = this
                     self.loading = true
                     $.ajax({
@@ -275,10 +271,6 @@
                         data: {date: $("#date").val()},
                         url: "/exams",
                         success: function (res) {
-
-                            console.log(res)
-
-
                             self.marked = res.marked
                             self.waiting = res.waiting
                             self.finalized = res.finalized

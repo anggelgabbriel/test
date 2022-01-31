@@ -23,9 +23,17 @@ class ExamFactory extends Factory
     public function definition()
     {
         return [
-            'type' => random_int(-1,2),
+            'type' => random_int(0, 2),
             'date' => '25/12/2022'
         ];
+    }
+
+
+    public function type($i)
+    {
+        return $this->state([
+            'type' => $i,
+        ]);
     }
 
 }
