@@ -19,7 +19,7 @@ class UserSeeder extends Seeder
         $user->name = 'Romerito GMAIL';
         $user->email = 'romerito.campos@gmail.com';
         $user->isadmin = true;
-        $user->password = \Hash::make('123');
+        $user->password = \Hash::make('12341234');
         $user->save();
 
         User::factory(10)->create()->each(function ($user) {
