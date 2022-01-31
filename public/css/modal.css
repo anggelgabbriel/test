@@ -1,0 +1,23 @@
+
+.modal-content {
+    font-family: 'Darker Grotesque', sans-serif;
+    border-radius: 1.5rem;
+    padding: 0px 26px;
+    box-shadow: 0px 0px 24px rgb(0 0 0 / 25%);
+    border: none;
+    /*background: linear-gradient(*/
+    /*    127.57deg, rgba(255, 255, 255, 0.4) 5.37%, rgba(255, 255, 255, 0.1) 72.64%);*/
+
+    background: linear-gradient(
+        153deg, #b3b3b3d6 12.37%, #55526c61 74.64%);
+
+
+}
+
+.modal-footer {
+    border: 0px;
+}
+
+.modal {
+    backdrop-filter: blur(5px);
+}

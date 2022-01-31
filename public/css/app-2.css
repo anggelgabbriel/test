@@ -1,0 +1,39 @@
+.text {
+    width: 887px;
+    line-height: 41px;
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+
+.sub-text {
+    font-size: 21px;
+    font-weight: 100;
+    width: 420px;
+    /*margin-top: -23px;*/
+    line-height: 25px;
+}
+
+.center-screen-with-bar {
+    min-height: 70vh;
+}
+
+.flash-message {
+    position: absolute;
+    margin: 0 auto;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+ nav .inline-flex button{
+    background: transparent !important;
+    border: none !important;
+}
+
+
+
