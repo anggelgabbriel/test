@@ -22,7 +22,15 @@ class UserSeeder extends Seeder
         $user->password = \Hash::make('12341234');
         $user->save();
 
-        User::factory(10)->create()->each(function ($user) {
+        $user = new User;
+        $user->name = 'Romerito GMAIL';
+        $user->email = 'romerito.campos1@gmail.com';
+        $user->isadmin = true;
+        $user->password = '12341234';
+        $user->save();
+
+
+        User::factory(22)->create()->each(function ($user) {
             $user->exam()->save(Exam::factory()->make());
         });
 
